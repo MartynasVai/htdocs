@@ -212,7 +212,6 @@ if (isset($_POST['edit_pas'])) {
 if (isset($_POST['edit_pfp'])) {
 
 
-  //if(!isset($_FILES['newprofilepic']['error'])){array_push($errors, "Picture is required");}
   
   if(!file_exists($_FILES['newprofilepic']['tmp_name']) || !is_uploaded_file($_FILES['newprofilepic']['tmp_name'])) {array_push($errors, "Picture is required");}
 
@@ -221,9 +220,7 @@ if (isset($_POST['edit_pfp'])) {
   $image = addslashes(base64_encode(file_get_contents($_FILES['newprofilepic']['tmp_name'])));
 
 
-    
 
- //     $newpic=base64_encode($image);
   $id  = $_SESSION['user_id'];
 
 

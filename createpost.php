@@ -28,10 +28,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Create post</title>
   
-
+  <style>
+	.btn{
+	border: 1px solid  rgb(0, 0, 0);
+}
+</style>
 
   <script>
 $(document).ready(function(){/// jei post type image parodyti image upload
+  $("#text").hide();
+    $("#image").show();
+
   $("#1").click(function(){
     $("#text").hide();
     $("#image").show();
@@ -63,13 +70,13 @@ $(document).ready(function(){/// jei post type image parodyti image upload
 
 
 </div>
-<div id=text hidden>
-<div>
+<div id="text" >
+<div class="input-group">
 <textarea name="text" rows="5" cols="50" maxlength="255">
 </textarea>
 </div>
 </div>
-<div id=image>
+<div id="image">
 <div class="input-group">
 <input type="file" accept="image/*" name="postimage" value="<?php echo $postimage; ?>">
     </div>
