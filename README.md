@@ -1,2 +1,2 @@
 # Kursinis Projektas
- htdocs
+ Paprastas socialinio tinklo prototipas kurtas naudojant XAMPP
